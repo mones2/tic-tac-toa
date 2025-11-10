@@ -1,4 +1,5 @@
 import Player from "./components/Player"
+import GameBoard from "./components/GameBoard.jsx";
 import { useState } from "react"  
 function App() {
   const [isEditing,setIsEditing] = useState(false);
@@ -10,8 +11,8 @@ function App() {
           <Player initiaName="player 1" playerSymbol="X" />
           <Player initiaName="player 2" playerSymbol="O" />
         </ol>
+      <GameBoard />
       </div>
-      <p>coming soon</p>
     </menu>
   )
 }
